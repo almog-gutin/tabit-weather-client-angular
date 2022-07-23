@@ -1,0 +1,9 @@
+<div class="sidebar">
+    <button class="close-btn" (click)="handleCloseSidebar()">X</button>
+
+    <ul class="sidebar-items">
+        <li class="sidebar-item" *ngFor="let sidebarItem of sidebarItems; let i = index" (click)="handleWeather(i)">
+            {{ sidebarItem }}
+        </li>
+    </ul>
+</div>

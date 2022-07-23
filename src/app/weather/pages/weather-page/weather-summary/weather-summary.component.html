@@ -1,0 +1,17 @@
+<div class="summary-description">
+    <img [src]="weatherSummary.weather_icons[0]" alt="weather-icon" />
+
+    <span>{{ weatherSummary.weather_descriptions[0] }}</span>
+</div>
+
+<div class="weather-data">
+    <div class="temprature">{{ weatherSummary.temperature }} &#176;</div>
+
+    <div class="meta-data">
+        <span class="humidity">{{ weatherSummary.humidity }} %</span>
+
+        <div class="divider"></div>
+
+        <span class="cloud-cover">{{ weatherSummary.cloudcover }}</span>
+    </div>
+</div>

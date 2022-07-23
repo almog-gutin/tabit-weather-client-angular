@@ -1,0 +1,21 @@
+@use '../../../../styles' as *;
+
+:host {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    min-height: calc(100vh - 6.25rem);
+}
+
+.weather-page {
+    @extend %flex-center;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    width: 100%;
+    max-width: 62.5rem;
+    padding: 0.5rem;
+
+    color: $white;
+}

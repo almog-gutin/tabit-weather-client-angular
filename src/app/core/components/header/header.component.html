@@ -1,0 +1,16 @@
+<header class="main-header">
+    <button class="hamburger-btn" (click)="handleOpenSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
+
+    <div *ngIf="!isErrorPage" class="city-time-container">
+        <h1>{{ currentCity }}</h1>
+        <h3>{{ currentDate | date: 'LLL, h:mm a' }}</h3>
+    </div>
+
+    <button class="add-btn">+</button>
+
+    <app-sidebar *ngIf="isSidebarOpen"></app-sidebar>
+</header>
